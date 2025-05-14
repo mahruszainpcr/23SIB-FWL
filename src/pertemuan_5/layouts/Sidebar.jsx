@@ -120,6 +120,19 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+ <li>
+            <NavLink
+              to="/Page19"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : ""}`
+              }
+              aria-label="Navigate to Page19"
+            >
+              <FaSignInAlt className="mr-4 text-xl" />
+              Ibal
+            </NavLink>
+          </li>
           {/* Login */}
           <li>
             <NavLink
@@ -134,6 +147,7 @@ export default function Sidebar() {
               Login
             </NavLink>
           </li>
+  
         </ul>
       </div>
 
