@@ -1,15 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  MdDashboard,
-  MdExpandMore,
-  MdExpandLess,
-} from "react-icons/md";
+import { MdDashboard, MdExpandMore, MdExpandLess } from "react-icons/md";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { FaSignInAlt } from "react-icons/fa";
 
-const baseClass = "flex items-center px-4 py-2 rounded-md hover:bg-gray-100 transition";
+const baseClass =
+  "flex items-center px-4 py-2 rounded-md hover:bg-gray-100 transition";
 const activeClass = "bg-green-100 text-green-600 font-semibold";
 
 export default function Sidebar() {
@@ -20,11 +17,17 @@ export default function Sidebar() {
   };
 
   return (
-    <div id="sidebar" className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg">
+    <div
+      id="sidebar"
+      className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg"
+    >
       {/* Logo Section */}
       <div id="sidebar-logo" className="flex flex-col">
         <span id="logo-title" className="font-poppins font-extrabold text-4xl">
-          Sedap <b id="logo-dot" className="text-green-500">.</b>
+          Sedap{" "}
+          <b id="logo-dot" className="text-green-500">
+            .
+          </b>
         </span>
         <span id="logo-subtitle" className="font-semibold text-gray-400">
           Modern Admin Dashboard
@@ -64,12 +67,26 @@ export default function Sidebar() {
             {openMenu === "transaksi" && (
               <ul className="pl-10 mt-2 space-y-2 text-gray-600 text-sm">
                 <li>
-                  <NavLink to="/order" className={({ isActive }) => `${isActive ? activeClass : ""} block py-1 hover:text-green-600`}>
+                  <NavLink
+                    to="/order"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? activeClass : ""
+                      } block py-1 hover:text-green-600`
+                    }
+                  >
                     Daftar Order
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/invoice" className={({ isActive }) => `${isActive ? activeClass : ""} block py-1 hover:text-green-600`}>
+                  <NavLink
+                    to="/invoice"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? activeClass : ""
+                      } block py-1 hover:text-green-600`
+                    }
+                  >
                     Invoice
                   </NavLink>
                 </li>
@@ -92,12 +109,26 @@ export default function Sidebar() {
             {openMenu === "manajemen" && (
               <ul className="pl-10 mt-2 space-y-2 text-gray-600 text-sm">
                 <li>
-                  <NavLink to="/customer" className={({ isActive }) => `${isActive ? activeClass : ""} block py-1 hover:text-green-600`}>
+                  <NavLink
+                    to="/customer"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? activeClass : ""
+                      } block py-1 hover:text-green-600`
+                    }
+                  >
                     Pelanggan
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/produk" className={({ isActive }) => `${isActive ? activeClass : ""} block py-1 hover:text-green-600`}>
+                  <NavLink
+                    to="/produk"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? activeClass : ""
+                      } block py-1 hover:text-green-600`
+                    }
+                  >
                     Produk
                   </NavLink>
                 </li>
@@ -119,7 +150,21 @@ export default function Sidebar() {
               Page MMZ
             </NavLink>
           </li>
-
+          {/* tambahan */}
+          <li>
+            <NavLink
+              to="/page29"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : "hover:bg-gray-700"}`
+              }
+              aria-label="Navigate to page 29"
+            >
+              <FaSignInAlt className="mr-4 text-xl"/>
+              <span>Page29 bela</span>
+            </NavLink>
+          </li>
+          {/* stop */}
           {/* Login */}
           <li>
             <NavLink
