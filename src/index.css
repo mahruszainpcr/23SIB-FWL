@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
+
+@theme {
+    --color-primary: #3A57E8;
+    --color-primary-light: #C4CCF8;
+    --color-primary-dark: #0048b2;
+    --color-primary-veryDark: #001f4d;
+
+    --color-text-satu: #232d42;
+    --color-text-dua: #8a92a6;
+    --color-text-tiga: #adb5bd;
+
+    --color-bg-satu: #ffffff;
+    --color-bg-dua: #e9ecef;
+    --color-bg-tiga: #e3e3e3;
+
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+:root {
+    --primary: var(--color-primary);
+    --primary-light: var(--color-primary-light);
+    --primary-dark: var(--color-primary-dark);
+    --primary-veryDark: var(--color-primary-veryDark);
+
+    --text-satu: var(--color-text-satu);
+    --text-dua: var(--color-text-dua);
+    --text-tiga: var(--color-text-tiga);
+
+    --bg-satu: var(--color-bg-satu);
+    --bg-dua: var(--color-bg-dua);
+    --bg-tiga: var(--color-bg-tiga);
+
+    --heading: var(--font-heading);
+    --body: var(--font-body);
+}
+
+body {
+    @apply bg-bg-satu text-text-satu font-body;
+}
