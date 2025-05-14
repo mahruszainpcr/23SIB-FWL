@@ -1,22 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+
 
 export default function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   function handleLogin() {
-
-    if (email === "keisha@gmail.com" && password === "keisha") {
-      navigate("/"); 
-    } else {
-      navigate("/Error401"); 
-    }
+    navigate("/");
   }
 
   return (
-    <div className="flex items-center justify-center h-screen bg-green-500">
+    <div className="flex items-center justify-center h-screen bg-blue-500">
       <div className="bg-white rounded-[14px] h-[650px] w-[735px] mt-2 shadow-lg">
         {/* Header */}
         <div className="flex justify-center items-center flex-col p-10">
@@ -34,9 +27,7 @@ export default function Login() {
             <input
               type="email"
               placeholder="keisha@gmail.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+              className="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
 
@@ -44,16 +35,14 @@ export default function Login() {
           <div className="flex flex-col">
             <div className="flex justify-between items-center mb-2">
               <label className="text-sm font-semibold">Password</label>
-              <a href="#" className="text-sm text-gray-500 hover:text-green-500">
+              <a href="#" className="text-sm text-gray-500 hover:text-blue-500">
                 Forget Password?
               </a>
             </div>
             <input
               type="password"
               placeholder="********"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+              className="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
 
@@ -73,7 +62,7 @@ export default function Login() {
           <div>
             <button
               onClick={handleLogin}
-              className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-200"
+              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200"
             >
               Login
             </button>
@@ -82,7 +71,7 @@ export default function Login() {
             <h1 className="flex items-center justify-center text-gray-600 text-sm">
               Don't have an account?
             </h1>
-            <a href="CreateAcc" className="text-green-500 ml-1">
+            <a href="CreateAcc" className="text-blue-500 ml-1">
               Create Account
             </a>
           </div>
