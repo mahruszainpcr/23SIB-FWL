@@ -121,21 +121,20 @@ export default function Sidebar() {
           </li>
 
           {/* page 12 */}
-           <li className="flex items-center space-x-3 p-3 hover:bg-gray-700 rounded-md cursor-pointer">
+           <li>
             <NavLink
-                 to="/page12"
-                  end
-                    className={({isActive}) =>
-                    `${baseClass} ${isActive ? activeClass : "hover:bg-gray-700"}` 
-                  }
-             >
-              <FaSignInAlt/>
-              <span>Page 12</span>
-              </NavLink>
-                       
-            </li>
+              to="/page12"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : ""}`
+              }
+              aria-label="Navigate to Page MMZ"
+            >
+              <FaSignInAlt className="mr-4 text-xl" />
+              Page 12
+            </NavLink>
+          </li>
 
-        
 
           {/* Login */}
           <li>
