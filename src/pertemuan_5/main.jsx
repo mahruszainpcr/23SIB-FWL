@@ -13,20 +13,22 @@ import Error from './pages/Error';
 import Login from './pages/Login';
 import Error401 from './pages/Error401';
 import MainLayout from './layouts/MainLayout';
+import Page18 from '../pages/latihangit/Page18';
 
 const App = () => {
     return (
         <Router>
             <Routes>
                 <Route element={<MainLayout />}>
-                                <Route path="/" element={<Dashboard />} />
-                                <Route path="Order" element={<Order />} />
-                                <Route path="Invoice" element={<OrderInvoice />} />
-                                <Route path="customer" element={<Customer />} />
-                                <Route path="Settings" element={<CustomerSettings />} />
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="Order" element={<Order />} />
+                    <Route path="Invoice" element={<OrderInvoice />} />
+                    <Route path="customer" element={<Customer />} />
+                    <Route path="Settings" element={<CustomerSettings />} />
+                    <Route path="Page18" element={<Page18 />} />
                 </Route>
                 <Route path='/login' element={<Login />} />
-                <Route path="*" element={<Error/>} />
+                <Route path="*" element={<Error />} />
                 <Route path='/Error401' element={<Error401 />} />
             </Routes>
         </Router>
