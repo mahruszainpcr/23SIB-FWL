@@ -135,6 +135,25 @@ export default function Sidebar() {
 
           
 
+           <li>
+            <NavLink
+              to="/Page27"
+          <li>
+            <NavLink
+              to="/pagenfm"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : ""}`
+              }
+              aria-label="Navigate to Page MMZ"
+            >
+              <FaSignInAlt className="mr-4 text-xl" />
+              Page haikal
+            </NavLink>
+          </li>
+              Page NF
+            </NavLink>
+          </li>
           {/* Login */}
           <li>
             <NavLink

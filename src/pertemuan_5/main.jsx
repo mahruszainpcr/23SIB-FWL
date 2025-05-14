@@ -15,6 +15,9 @@ import Error401 from './pages/Error401';
 import MainLayout from './layouts/MainLayout';
 import Page04 from '../pages/latihangit/page04.jsx';
 
+import Page27 from '../pages/latihangit/Page27';
+import PageNFM from '../pages/latihangit/PageNFM';
+
 
 const App = () => {
     return (
@@ -27,6 +30,8 @@ const App = () => {
                                 <Route path="customer" element={<Customer />} />
                                 <Route path="Settings" element={<CustomerSettings />} />
                                 <Route path="page04" element={<Page04></Page04>} />
+                                <Route path="Page27" element={<Page27 />}/>
+                                <Route path="pagenfm" element={<PageNFM />} />
                 </Route>
                 <Route path='/login' element={<Login />} />
                 <Route path="*" element={<Error/>} />
