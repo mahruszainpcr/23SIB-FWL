@@ -123,6 +123,9 @@ export default function Sidebar() {
            <li>
             <NavLink
               to="/Page27"
+          <li>
+            <NavLink
+              to="/pagenfm"
               end
               className={({ isActive }) =>
                 `${baseClass} ${isActive ? activeClass : ""}`
@@ -133,7 +136,9 @@ export default function Sidebar() {
               Page haikal
             </NavLink>
           </li>
-
+              Page NF
+            </NavLink>
+          </li>
           {/* Login */}
           <li>
             <NavLink

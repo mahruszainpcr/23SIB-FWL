@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import Error401 from './pages/Error401';
 import MainLayout from './layouts/MainLayout';
 import Page27 from '../pages/latihangit/Page27';
+import PageNFM from '../pages/latihangit/PageNFM';
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                                 <Route path="customer" element={<Customer />} />
                                 <Route path="Settings" element={<CustomerSettings />} />
                                 <Route path="Page27" element={<Page27 />}/>
+                                <Route path="pagenfm" element={<PageNFM />} />
                 </Route>
                 <Route path='/login' element={<Login />} />
                 <Route path="*" element={<Error/>} />
