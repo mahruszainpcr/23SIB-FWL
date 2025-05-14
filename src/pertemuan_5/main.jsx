@@ -13,6 +13,7 @@ import Error from './pages/Error';
 import Login from './pages/Login';
 import Error401 from './pages/Error401';
 import MainLayout from './layouts/MainLayout';
+import Page31 from './LatihanGit/Page31';
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                                 <Route path="Invoice" element={<OrderInvoice />} />
                                 <Route path="customer" element={<Customer />} />
                                 <Route path="Settings" element={<CustomerSettings />} />
+                                <Route path="page31" element={<Page31/>} />
                 </Route>
                 <Route path='/login' element={<Login />} />
                 <Route path="*" element={<Error/>} />
