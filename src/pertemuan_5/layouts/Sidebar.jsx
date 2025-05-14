@@ -120,6 +120,23 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* page 12 */}
+           <li className="flex items-center space-x-3 p-3 hover:bg-gray-700 rounded-md cursor-pointer">
+            <NavLink
+                 to="/page12"
+                  end
+                    className={({isActive}) =>
+                    `${baseClass} ${isActive ? activeClass : "hover:bg-gray-700"}` 
+                  }
+             >
+              <FaSignInAlt/>
+              <span>Page 12</span>
+              </NavLink>
+                       
+            </li>
+
+        
+
           {/* Login */}
           <li>
             <NavLink
