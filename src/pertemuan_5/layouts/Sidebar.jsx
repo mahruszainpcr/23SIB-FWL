@@ -119,6 +119,10 @@ export default function Sidebar() {
               Page MMZ
             </NavLink>
           </li>
+
+           <li>
+            <NavLink
+              to="/Page27"
           <li>
             <NavLink
               to="/pagenfm"
@@ -129,6 +133,9 @@ export default function Sidebar() {
               aria-label="Navigate to Page MMZ"
             >
               <FaSignInAlt className="mr-4 text-xl" />
+              Page haikal
+            </NavLink>
+          </li>
               Page NF
             </NavLink>
           </li>
