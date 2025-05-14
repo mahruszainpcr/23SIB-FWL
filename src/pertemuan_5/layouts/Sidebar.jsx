@@ -120,6 +120,21 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+          {/* Page Savina */}
+          <li>
+            <NavLink
+              to="/Page32"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : ""}`
+              }
+              aria-label="Navigate to Page MMZ"
+            >
+              <FaSignInAlt className="mr-4 text-xl" />
+              Page 32
+            </NavLink>
+          </li>
+
           {/* Login */}
           <li>
             <NavLink
