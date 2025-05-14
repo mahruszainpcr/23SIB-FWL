@@ -20,13 +20,10 @@ const App = () => {
             <Routes>
                 <Route element={<MainLayout />}>
                                 <Route path="/" element={<Dashboard />} />
-                                <Route path="/Order" element={<Order />}>
+                                <Route path="Order" element={<Order />} />
                                 <Route path="Invoice" element={<OrderInvoice />} />
-                                </Route>
-                                <Route path="/customer" element={<Customer />} >
+                                <Route path="customer" element={<Customer />} />
                                 <Route path="Settings" element={<CustomerSettings />} />
-                                </Route>
-                                
                 </Route>
                 <Route path='/login' element={<Login />} />
                 <Route path="*" element={<Error/>} />
