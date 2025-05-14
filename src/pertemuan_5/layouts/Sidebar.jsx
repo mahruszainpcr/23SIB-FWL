@@ -134,6 +134,20 @@ export default function Sidebar() {
               Login
             </NavLink>
           </li>
+
+            <li>
+            <NavLink
+              to="/Page02"
+              end
+              className={({ isActive }) =>
+                `${baseClass} ${isActive ? activeClass : ""}`
+              }
+              aria-label="Navigate to Dashboard"
+            >
+              <MdDashboard className="mr-4 text-xl" />
+              Katanya JAGO
+            </NavLink>
+          </li>
         </ul>
       </div>
 
