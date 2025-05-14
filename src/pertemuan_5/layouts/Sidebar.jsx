@@ -108,15 +108,15 @@ export default function Sidebar() {
           {/* Page MMZ */}
           <li>
             <NavLink
-              to="/pagemmz"
+              to="/Page03"
               end
               className={({ isActive }) =>
                 `${baseClass} ${isActive ? activeClass : ""}`
               }
-              aria-label="Navigate to Page MMZ"
+              aria-label="Navigate to Page 03"
             >
               <FaSignInAlt className="mr-4 text-xl" />
-              Page MMZ
+              Page 03
             </NavLink>
           </li>
 
